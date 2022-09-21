@@ -1,11 +1,18 @@
-<h1>Calendar of Power</h1>
-<p>Submit one event and have it go to your icloud and outlook.</p>
-
-<form>
-    <ul>
-    <% for(const key in formElements) { %>
-        <li><label for="<%=key%>"><%=formElements[key]%>: <input name="<%=key%>" type="text" /></label></li>
-    <% } %>
-    </ul>
-    <input type="submit" value="Submit" />
-</form>
+<div class="row">
+    <div class="col">
+        <h1>Calendar of Power</h1>
+        <p>Submit one event and have it go to your icloud and outlook.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <form>
+            <ul>
+            <% for(const key in formElements) { %>
+                <li><label for="<%=key%>"><%=formElements[key]%>: <input name="<%=key%>" type="text" /></label></li>
+            <% } %>
+            </ul>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</div>
